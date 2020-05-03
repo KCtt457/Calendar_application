@@ -1,0 +1,84 @@
+.root {
+    -fx-base: #2c2f33;
+    -fx-background: -fx-base;
+    -fx-font-family: "Segoe UI", cursive, sans-serif;
+    -fx-font-size: 16;
+    -fx-control-inner-background: #4B4D4F;
+    -fx-control-inner-background-alt: #555759;
+    -fx-dark-text-color: #BFBFBF;
+    -fx-mid-text-color: #ffffff;
+    -fx-light-text-color: -fx-mid-text-color;
+    -fx-accent: #859DF2;
+    -fx-focus-color: #4B4D4F;
+    -fx-faint-focus-color: #4B4D4F;
+    -fx-cell-hover-color: #2c2f33;
+    -fx-background-color: #2c2f33;
+}
+
+.calendar-grid {
+    -fx-background-color: #4B4D4F;
+    -fx-border-color: #BFBFBF;
+}
+
+.side-menu {
+    -fx-background-color: #23272a;
+}
+
+.label {
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 10;
+}
+
+.label-error {
+    -fx-text-fill: #FF0000;
+    -fx-background-color: #ffbfbf;
+    -fx-background-radius: 10;
+}
+
+.button {
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #7289da;
+    -fx-background-radius: 17;
+}
+
+.button:hover {
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #9BAEEE;
+    -fx-background-radius: 17;
+}
+
+.button-red {
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #FF0000;
+    -fx-background-radius: 17;
+}
+
+.button-red:hover {
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #FF6969;
+    -fx-background-radius: 17;
+}
+
+.calendar-event {
+    -fx-font-size: 12;
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #F37521;
+    -fx-background-radius: 4;
+}
+
+.slider .track{
+    -fx-background-color: #00FF06;
+}
+
+.slider .thumb{
+    -fx-background-color: #ffffff;
+}
+
+.table-view {
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #4B4D4F;
+}
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: #23272a;
+    -fx-border-color: #BFBFBF;
+}

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane hgap="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" vgap="5.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AlertMenuControl">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="793.12109375" minWidth="10.0" prefWidth="695.7466430664062" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="296.0" minWidth="10.0" prefWidth="122.25335693359375" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="30.0" minHeight="5.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="283.0" minHeight="10.0" prefHeight="180.6325225830078" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="50.0" minHeight="5.0" prefHeight="50.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="292.4604797363281" minHeight="10.0" prefHeight="292.4604797363281" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label fx:id="upcoming" text="Upcoming Alerts" />
+      <TableView fx:id="upcomingTableView" prefHeight="184.0" prefWidth="719.0" GridPane.rowIndex="1">
+        <columns>
+            <TableColumn fx:id="timeColumn" editable="false" minWidth="78.0" prefWidth="178.0" text="Alert Time" />
+          <TableColumn fx:id="nameColumn" editable="false" prefWidth="131.0" text="Event" />
+          <TableColumn fx:id="messageColumn" prefWidth="355.0" text="Message" />
+            <TableColumn fx:id="typeColumn" prefWidth="54.0" text="Type" />
+        </columns>
+      </TableView>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+         <children>
+            <Label text="Create Alert:" />
+            <Button fx:id="createIAlert" mnemonicParsing="false" onAction="#createIndividualAlert" text="Individual" />
+            <Button fx:id="createFAlert" mnemonicParsing="false" onAction="#createFrequentAlert" text="Frequent" />
+         </children>
+      </VBox>
+      <Label fx:id="all" text="All Alerts" GridPane.rowIndex="2" />
+      <TableView fx:id="allTableView" prefHeight="458.0" prefWidth="727.0" GridPane.rowIndex="3">
+        <columns>
+          <TableColumn fx:id="allNameColumn" prefWidth="178.0" text="Event" />
+          <TableColumn fx:id="allDataColumn" prefWidth="540.0" text="Alerts" />
+        </columns>
+      </TableView>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <children>
+            <Label text="Modify Selected Alert:">
+               <font>
+                  <Font size="12.5" />
+               </font></Label>
+            <Button fx:id="edit" mnemonicParsing="false" onAction="#editAlert" text="Edit" />
+            <Button fx:id="delete" mnemonicParsing="false" onAction="#deleteAlert" text="Delete" />
+            <Separator orientation="VERTICAL" prefHeight="182.0" prefWidth="0.0" />
+            <Button fx:id="returnToMenu" mnemonicParsing="false" onAction="#setReturnToMenu" text="returnToMenu" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </padding>
+</GridPane>

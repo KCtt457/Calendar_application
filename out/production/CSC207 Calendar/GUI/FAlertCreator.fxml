@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.FXCollections?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.FAlertCreatorControl">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="580.0" minWidth="10.0" prefWidth="580.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="292.0" minWidth="0.0" prefWidth="0.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+         <children>
+            <TextField fx:id="eventName" promptText="ex. Test" />
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="3">
+         <children>
+            <Label fx:id="everyLabel" text="Every" />
+            <TextField fx:id="frequency" prefHeight="27.0" prefWidth="50.0" promptText="1" />
+            <Label />
+            <ChoiceBox fx:id="unit" prefWidth="150.0" value="day(s)">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="day(s)" />
+                        <String fx:value="hour(s)" />
+                    </FXCollections>
+                </items>
+            </ChoiceBox>
+            <Label text="until the event date" />
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="5">
+         <children>
+            <TextField fx:id="message" prefHeight="27.0" prefWidth="496.0" promptText="ex. review for test" />
+         </children>
+      </HBox>
+      <Label fx:id="messageLabel" text="Message" GridPane.rowIndex="4" />
+      <Button fx:id="submit" mnemonicParsing="false" onAction="#submit" text="Submit" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <Label fx:id="eventNameLabel" text="Event Name to add Alert to" />
+            <Label fx:id="eventErrorMsg" text="Event not found!" textFill="red" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="20.0" GridPane.rowIndex="2">
+         <children>
+            <Label fx:id="frequencyLabel" text="Frequency" />
+            <Label fx:id="frequencyErrorMsg" text="Not valid frequency! 1. Event has passed 2. No valid alert times" textFill="red" />
+         </children>
+      </HBox>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</GridPane>

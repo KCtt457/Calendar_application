@@ -1,0 +1,62 @@
+.root {
+    -fx-font-family: "Segoe UI", cursive, sans-serif;
+    -fx-font-size: 16;
+    -fx-accent: #00B2FF;
+    -fx-focus-color: #DCDCDC;
+    -fx-faint-focus-color: #DCDCDC;
+}
+
+.calendar-grid {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #a1a1a1;
+}
+
+.side-menu {
+    -fx-background-color: #DCDCDC;
+}
+
+.label {
+    -fx-text-fill: #000000;
+    -fx-background-radius: 10;
+}
+
+.label-error {
+    -fx-text-fill: #FF0000;
+    -fx-background-color: #ffbfbf;
+    -fx-background-radius: 10;
+}
+
+.button {
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #0084FF;
+    -fx-background-radius: 17;
+}
+
+.button:hover {
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #5FB1FE;
+    -fx-background-radius: 17;
+}
+
+.button-red {
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #FF0000;
+    -fx-background-radius: 17;
+}
+
+.button-red:hover {
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #FF6969;
+    -fx-background-radius: 17;
+}
+
+.slider .thumb{
+    -fx-background-color: #ffffff;
+}
+
+.calendar-event {
+    -fx-font-size: 12;
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #F37521;
+    -fx-background-radius: 4;
+}
