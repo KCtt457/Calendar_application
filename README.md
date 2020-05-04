@@ -65,8 +65,4 @@ then you cannot make changes to the name or tag
 ---------------------------------------------------
 ### CONTACT
 
-Alvin Liang: alvin.liang@mail.utoronto.ca
-
-Kimlin Ann-Marie Chin: kimlin.chin@mail.utoronto.ca
-
-Gabriel Anover: gabriel.anover@mail.utoronto.ca
+Gabriel Anover: anover.gabriel@gmail.com
