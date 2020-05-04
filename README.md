@@ -14,8 +14,8 @@ Created by: Gabriel Libozada Anover, Kimlin Ann-Marie Chin, Rikki Hung, Alvin Ha
     - Default login
         - username: user 
         - password: password  
-4. You are now free personalize your own Calendar, and use the calendar as you normally would!
-   -changes to this your Calendar will be saved for the next time you use it
+4. You are now free personalize your own calendar, and use the calendar as you normally would!  
+    -changes to your calendars will be saved for the next time you use it
 
 ---------------------------------------------------
 ### NOTABLE FEATURES
@@ -60,7 +60,7 @@ then you cannot make changes to the name or tag
 
 2. Usernames cannot contain any underscores
 
-3. Names for new calendars cannot contain "." characters or spaces
+3. Names for new calendars cannot contain the character "." or spaces
 
 ---------------------------------------------------
 ### CONTACT
