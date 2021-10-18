@@ -61,8 +61,3 @@ then you cannot make changes to the name or tag
 2. Usernames cannot contain any underscores
 
 3. Names for new calendars cannot contain the character "." or spaces
-
----------------------------------------------------
-### CONTACT
-
-Gabriel Anover: anover.gabriel@gmail.com
