@@ -1,4 +1,4 @@
-# Calendar Application
+# CSC207 Final Project: Calendar Application
 
 This application was created as part of the final project for the winter 2020 session of CSC207H1 - Software Design at
 the University of Toronto. 
